@@ -18,9 +18,17 @@ body{
 .logo{
   font-size:36px;
   font-weight:bold;
+  font-family:helvetica; 
   letter-spacing:2px;
   color:rgb(71, 84, 227);
 }
+
+.seccion-logo{ 
+  font-size:30px;
+  font-weight: bold;
+  font-family:helvetica;
+  color:rgb(71, 84, 227);
+} 
 
 .nav{
   display:flex;
@@ -32,6 +40,50 @@ body{
   color:rgb(107, 85, 184);
   margin:0 10px;
   text-decoration:none;
+}
+
+.product-list{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:24px;
+  align-items:stretch;
+  margin-top:30px;
+}
+
+.product-card{
+  background:#ffffff;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 8px 24px rgba(0,0,0,0.08);
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+
+.product-card a{
+  display:flex;
+  flex-direction:column;
+  flex:1;
+  color:inherit;
+  text-decoration:none;
+}
+
+.product-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  display:block;
+}
+
+.product-card h2{
+  margin:18px 18px 10px;
+  font-size:1.2rem;
+}
+
+.product-card p{
+  margin:0 18px 18px;
+  line-height:1.5;
+  flex:1;
 }
 
 .hamburger{
