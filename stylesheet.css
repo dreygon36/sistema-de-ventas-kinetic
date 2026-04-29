@@ -7,16 +7,29 @@ body{
   position: fixed;
   top:0;
   width:100%;
-  background:#1c059dc1;
-  color:rgb(30, 75, 224);
-  display:flex;
-  justify-content:space-between;
+  background:#1f099a;
+  color:rgb(71, 84, 227);
+  display:grid;
+  grid-template-columns:auto 1fr auto;
   align-items:center;
-  padding:30px 60px;
+  padding:25px 60px;
+}
+
+.logo{
+  font-size:36px;
+  font-weight:bold;
+  letter-spacing:2px;
+  color:rgb(71, 84, 227);
+}
+
+.nav{
+  display:flex;
+  justify-self:center;
+  gap:20px;
 }
 
 .nav a{
-  color:white;
+  color:rgb(107, 85, 184);
   margin:0 10px;
   text-decoration:none;
 }
