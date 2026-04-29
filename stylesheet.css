@@ -1,0 +1,28 @@
+body{
+  margin:0;
+  font-family: Arial;
+}
+
+.header{
+  position: fixed;
+  top:0;
+  width:100%;
+  background:#1c059dc1;
+  color:rgb(30, 75, 224);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:30px 60px;
+}
+
+.nav a{
+  color:white;
+  margin:0 10px;
+  text-decoration:none;
+}
+
+.hamburger{
+  font-size:24px;
+  cursor:pointer;
+  display:none;
+}
