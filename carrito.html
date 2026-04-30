@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kinetic</title>
+    <title>Kinetic - Carrito</title>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
-<body onload="updateCartCount();">
+<body onload="updateCartCount(); initCartPage();">
     <header class="header">
         <div class="logo">KINETIC</div>
         <nav class="nav" id="menu">
@@ -19,14 +19,10 @@
         <div class="hamburger" onclick="toggleMenu()">☰</div>
     </header>
 
-    <main style="margin-top:140px; padding:40px;">
-        <div class="seccion-logo">Bienvenido a Kinetic</div>
-        <font face="helvetica" size="5">
-        <p>Explora nuestros productos, descubre nuestras ofertas especiales y encuentra lo que necesitas para tu estilo de vida deportiva y moderna.</p>
-    <br><br>
-        <p>Gracias por eleguir Kinetic como tu tienda de confianza.</p>
-        </font>
-      </main>
+    <main class="cart-page">
+        <div class="seccion-logo">Tu carrito</div>
+        <div id="cart-container"></div>
+    </main>
 
     <script src="scripts.js"></script>
 </body>

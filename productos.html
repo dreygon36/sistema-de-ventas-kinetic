@@ -1,48 +1,59 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kinetic</title>
+    <title>Kinetic - Productos</title>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
-<body>
+<body onload="updateCartCount();">
     <header class="header">
         <div class="logo">KINETIC</div>
         <nav class="nav" id="menu">
             <a href="kinetic.html">Inicio</a>
             <a href="productos.html">Productos</a>
-            <a href="#">Ofertas</a>
-            <a href="#">Contacto</a>
+            <a href="ofertas.html">Ofertas</a>
+            <a href="contact.html">Contacto</a>
+            <a href="carrito.html">Carrito <span class="cart-badge" id="cart-count">0</span></a>
         </nav>
-        <div class="hamburger" onclick="toggleMenu()">
-            ☰
-        </div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
     </header>
 
     <main style="margin-top:140px; padding:40px;">
         <div class="seccion-logo">Productos</div>
         <section class="product-list">
             <article class="product-card">
-                <a href="producto-chaleco.html">
-                    <img src="producto_chaleco1.png" alt="Chaleco">
-                    <h2>Chaleco </h2>
-                    <p>Utilizado por atletas profesionales para medir su capacidad y rendimiento. </p>
-                </a>
+                <img src="producto_chaleco1.png" alt="Chaleco">
+                <div class="product-card-body">
+                    <a href="producto-chaleco.html"><h2>Chaleco</h2></a>
+                    <p>Utilizado por atletas profesionales para medir su capacidad y rendimiento.</p>
+                    <div class="product-actions">
+                        <span class="price">$49.99</span>
+                        <button class="add-button" type="button" data-id="chaleco" data-name="Chaleco" data-price="49.99" onclick="addProductFromButton(this)">Agregar al carrito</button>
+                    </div>
+                </div>
             </article>
             <article class="product-card">
-                <a href="producto-smartwatch.html">
-                    <img src="producto_smartwatch1.png" alt="Smartwatch">
-                    <h2>Smartwatch</h2>
-                    <p>monitorea el oxigeno en sangre, la frecuencia cardíaca y otros parámetros de salud en tiempo real.</p>
-                </a>
+                <img src="producto_smartwatch1.png" alt="Smartwatch">
+                <div class="product-card-body">
+                    <a href="producto-smartwatch.html"><h2>Smartwatch</h2></a>
+                    <p>Monitorea el oxígeno en sangre, la frecuencia cardíaca y otros parámetros de salud en tiempo real.</p>
+                    <div class="product-actions">
+                        <span class="price">$79.99</span>
+                        <button class="add-button" type="button" data-id="smartwatch" data-name="Smartwatch" data-price="79.99" onclick="addProductFromButton(this)">Agregar al carrito</button>
+                    </div>
+                </div>
             </article>
             <article class="product-card">
-                <a href="producto-gafas-aumentadas.html">
-                    <img src="producto_gafas-aumentadas1.png" alt="Gafas Aumentadas">
-                    <h2>Gafas Aumentadas</h2>
-                    <p>Le permiten al usuario un acceso inmersivo a información digital de rutas.</p>
-                </a>
+                <img src="producto_gafas-aumentadas1.png" alt="Gafas Aumentadas">
+                <div class="product-card-body">
+                    <a href="producto-gafas-aumentadas.html"><h2>Gafas Aumentadas</h2></a>
+                    <p>Te permiten un acceso inmersivo a información digital y rutas guiadas.</p>
+                    <div class="product-actions">
+                        <span class="price">$69.99</span>
+                        <button class="add-button" type="button" data-id="gafas" data-name="Gafas Aumentadas" data-price="69.99" onclick="addProductFromButton(this)">Agregar al carrito</button>
+                    </div>
+                </div>
             </article>
         </section>
     </main>

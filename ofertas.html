@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinetic - Ofertas</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body onload="updateCartCount();">
+    <header class="header">
+        <div class="logo">KINETIC</div>
+        <nav class="nav" id="menu">
+            <a href="kinetic.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="ofertas.html">Ofertas</a>
+            <a href="contact.html">Contacto</a>
+            <a href="carrito.html">Carrito <span class="cart-badge" id="cart-count">0</span></a>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <main style="margin-top:140px; padding:40px;">
+        <div class="seccion-logo">Ofertas</div>
+        <section class="product-list">
+            <article class="product-card">
+                <img src="producto_smartwatch1-sale.png" alt="Smartwatch en oferta">
+                <div class="product-card-body">
+                    <h2>Smartwatch - Oferta</h2>
+                    <p>Precio especial con 25% de descuento. Controla tu salud cada día.</p>
+                    <div class="product-actions">
+                        <span class="price">$59.99</span>
+                        <button class="add-button" type="button" data-id="smartwatch-oferta" data-name="Smartwatch en oferta" data-price="59.99" onclick="addProductFromButton(this)">Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="producto_chaleco1-sale.png" alt="Chaleco en oferta">
+                <div class="product-card-body">
+                    <h2>Chaleco - Oferta</h2>
+                    <p>Solo por tiempo limitado, ideal para entrenamientos intensos.</p>
+                    <div class="product-actions">
+                        <span class="price">$39.99</span>
+                        <button class="add-button" type="button" data-id="chaleco-oferta" data-name="Chaleco en oferta" data-price="39.99" onclick="addProductFromButton(this)">Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="producto_gafas-aumentadas1-sale.png" alt="Gafas aumentadas en oferta">
+                <div class="product-card-body">
+                    <h2>Gafas Aumentadas - Oferta</h2>
+                    <p>Disfruta de una experiencia inmersiva con descuento especial.</p>
+                    <div class="product-actions">
+                        <span class="price">$54.99</span>
+                        <button class="add-button" type="button" data-id="gafas-oferta" data-name="Gafas Aumentadas en oferta" data-price="54.99" onclick="addProductFromButton(this)">Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
